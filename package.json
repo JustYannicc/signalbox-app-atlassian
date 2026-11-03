@@ -1,0 +1,15 @@
+{
+  "name": "@signalbox.executor.community/atlassian",
+  "private": true,
+  "description": "Read and update Jira, Jira Service Management, and Confluence with approval for every write.",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "apps": "0.0.1-beta.119"
+  },
+  "executor": {
+    "title": "Atlassian"
+  }
+}
