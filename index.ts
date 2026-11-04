@@ -1,4 +1,3 @@
-import { icons } from "./icon.js";
 import { defineApp, router, withApprovals } from "apps";
 import { always } from "apps/operations/approval";
 import { liveOpenapiRouter } from "apps/openapi";
@@ -14,7 +13,7 @@ import { optionsFor, type ApiName } from "./openapi.js";
 import { fetchFor } from "./transport.js";
 import { specificationCache } from "./specifications.js";
 
-export default defineApp({ ...requirements, icons }, async ({ user, cache, fetch, signal }) => {
+export default defineApp(requirements, async ({ user, cache, fetch, signal }) => {
   const account = user?.accounts.atlassian;
   const api = (name: ApiName) =>
     account === undefined
